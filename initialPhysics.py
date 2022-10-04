@@ -1,95 +1,106 @@
-# initialPhysics.py - Initial Starter Physics File
+# initialPhysics.py - Initial Starter Physics File (For PHY2048 @ UCF)
 # By: Joshua Lim
 # Date: 10/04/2022
 
 # function to ask what section of physics to use
 def physicsSection():
     print("What section of physics would you like to use?")
-    print("1. Kinematics")
-    print("2. Dynamics")
-    print("3. Work, Energy, and Power")
-    print("4. Momentum and Collisions")
-    print("5. Rotational Motion")
-    print("6. Gravitation")
-    print("7. Fluids")
-    print("8. Thermal Physics")
-    print("9. Waves and Sound")
-    print("10. Electromagnetism")
-    print("11. Optics")
-    print("12. Modern Physics")
-    print("13. Quantum Physics")
-    print("14. Relativity")
-    print("15. Astrophysics")
-    print("16. Cosmology")
-    print("17. Particle Physics")
-    print("18. Nuclear Physics")
-    print("19. Atomic Physics")
-    print("20. Solid State Physics")
-    print("21. Condensed Matter Physics")
-    print("22. Statistical Physics")
-    print("23. Biophysics")
-    print("24. Medical Physics")
-    print("25. Environmental Physics")
-    print("26. Geophysics")
+    print("1. Vector Algebra")
+    print("2. Motion in 1D")
+    print("3. Projectile Motion (2D)")
+    print("4. Forces")
+    print("5. Newton's Laws of Motion")
+    print("6. Circular Motion")
+    print("7. Work and Kinetic Energy")
+    print("8. Conservation of Mechanical Energy")
+    print("9. Linear Momentum and Conservation of Momentum")
+    print("10. Collisions and Many Particle Systems")
+    print("11. Torques and Static Equilibrium")
+    print("12. Rotational Motion")
+    print("13. Angular Momentum")
+    print("14. Simple Harmonic Motion")
+    print("15. Waves and Oscillation")
     choice = input("Enter the number of the section you would like to use: ")
     if choice == "1":
-        # python3 kinematics.py
-        with open("kinematics.py", "r") as kinematics:
-            code = kinematics.read()
+        # python3 vectorAlgebra.py
+        with open("vectorAlgebra.py", "r") as vectorAlgebra:
+            code = vectorAlgebra.read()
             exec(code)
     elif choice == "2":
-        exec("dynamics.py")
+        # python3 motion1D.py
+        with open("motion1D.py", "r") as motion1D:
+            code = motion1D.read()
+            exec(code)
     elif choice == "3":
-        exec("workEnergyPower.py")
+        # python3 projectileMotion.py
+        with open("projectileMotion.py", "r") as projectileMotion:
+            code = projectileMotion.read()
+            exec(code)
     elif choice == "4":
-        exec("momentumCollisions.py")
+        # python3 forces.py
+        with open("forces.py", "r") as forces:
+            code = forces.read()
+            exec(code)
     elif choice == "5":
-        exec("rotationalMotion.py")
+        # python3 newtonsLaws.py
+        with open("newtonsLaws.py", "r") as newtonsLaws:
+            code = newtonsLaws.read()
+            exec(code)
     elif choice == "6":
-        exec("gravitation.py")
+        # python3 circularMotion.py
+        with open("circularMotion.py", "r") as circularMotion:
+            code = circularMotion.read()
+            exec(code)
     elif choice == "7":
-        exec("fluids.py")
+        # python3 workAndKineticEnergy.py
+        with open("workAndKineticEnergy.py", "r") as workAndKineticEnergy:
+            code = workAndKineticEnergy.read()
+            exec(code)
     elif choice == "8":
-        exec("thermalPhysics.py")
+        # python3 conservationOfMechanicalEnergy.py
+        with open("conservationOfMechanicalEnergy.py", "r") as conservationOfMechanicalEnergy:
+            code = conservationOfMechanicalEnergy.read()
+            exec(code)
     elif choice == "9":
-        exec("wavesSound.py")
+        # python3 linearMomentumAndConservationOfMomentum.py
+        with open("linearMomentumAndConservationOfMomentum.py", "r") as linearMomentumAndConservationOfMomentum:
+            code = linearMomentumAndConservationOfMomentum.read()
+            exec(code)
     elif choice == "10":
-        exec("electromagnetism.py")
+        # python3 collisionsAndManyParticleSystems.py
+        with open("collisionsAndManyParticleSystems.py", "r") as collisionsAndManyParticleSystems:
+            code = collisionsAndManyParticleSystems.read()
+            exec(code)
     elif choice == "11":
-        exec("optics.py")
+        # python3 torquesAndStaticEquilibrium.py
+        with open("torquesAndStaticEquilibrium.py", "r") as torquesAndStaticEquilibrium:
+            code = torquesAndStaticEquilibrium.read()
+            exec(code)
     elif choice == "12":
-        exec("modernPhysics.py")
+        # python3 rotationalMotion.py
+        with open("rotationalMotion.py", "r") as rotationalMotion:
+            code = rotationalMotion.read()
+            exec(code)
     elif choice == "13":
-        exec("quantumPhysics.py")
+        # python3 angularMomentum.py
+        with open("angularMomentum.py", "r") as angularMomentum:
+            code = angularMomentum.read()
+            exec(code)
     elif choice == "14":
-        exec("relativity.py")
+        # python3 simpleHarmonicMotion.py
+        with open("simpleHarmonicMotion.py", "r") as simpleHarmonicMotion:
+            code = simpleHarmonicMotion.read()
+            exec(code)
     elif choice == "15":
-        exec("astrophysics.py")
-    elif choice == "16":
-        exec("cosmology.py")
-    elif choice == "17":
-        exec("particlePhysics.py")
-    elif choice == "18":
-        exec("nuclearPhysics.py")
-    elif choice == "19":
-        exec("atomicPhysics.py")
-    elif choice == "20":
-        exec("solidStatePhysics.py")
-    elif choice == "21":
-        exec("condensedMatterPhysics.py")
-    elif choice == "22":
-        exec("statisticalPhysics.py")
-    elif choice == "23":
-        exec("biophysics.py")
-    elif choice == "24":
-        exec("medicalPhysics.py")
-    elif choice == "25":
-        exec("environmentalPhysics.py")
-    elif choice == "26":
-        exec("geophysics.py")
+        # python3 wavesAndOscillation.py
+        with open("wavesAndOscillation.py", "r") as wavesAndOscillation:
+            code = wavesAndOscillation.read()
+            exec(code)
     else:
-        print("Invalid choice. Please try again.")
+        print("Please enter a valid number.")
         physicsSection()
+        
 
 # runs this to start the program
-physicsSection()
+def main():
+    physicsSection()

@@ -1,6 +1,9 @@
-# kinematics.py - Kinematics Equations File
+# projectileMotion.py - Projectile Motion (2D) Equations File
 # By: Joshua Lim
 # Date: 10/04/2022
+
+# imports
+import math
 
 # function to ask what variables are given
 def givenVariables():
@@ -12,7 +15,6 @@ def givenVariables():
     distance = input("Enter the distance: ")
     solving = solvingFor()
     if solving == "initialVelocity":
-        print("hereeeeee")
         solution = initialVelocity(finalVelocity, acceleration, time, distance)
         print("The initial velocity is " + str(solution))
     elif solving == "finalVelocity":
@@ -38,7 +40,6 @@ def solvingFor():
     print("5. Distance")
     choice = int(input("Enter the number of the variable you are solving for: "))
     if choice == 1:
-        print("hereeeeee")
         return "initialVelocity"
     elif choice == 2:
         return "finalVelocity"
@@ -54,7 +55,6 @@ def solvingFor():
 
 # function to solve for initial velocity
 def initialVelocity(finalVelocity, acceleration, time, distance):
-    print("hereeeeee")
     if finalVelocity == "-":
         finalVelocity = 0
     if acceleration == "-":
@@ -63,7 +63,7 @@ def initialVelocity(finalVelocity, acceleration, time, distance):
         time = 0
     if distance == "-":
         distance = 0
-    return finalVelocity - (acceleration * time) - (distance / time)
+    return finalVelocity - acceleration * time - distance
 
 # function to solve for final velocity
 def finalVelocity(initialVelocity, acceleration, time, distance):
@@ -75,11 +75,10 @@ def finalVelocity(initialVelocity, acceleration, time, distance):
         time = 0
     if distance == "-":
         distance = 0
-    return initialVelocity + (acceleration * time) + (distance / time)
+    return initialVelocity + acceleration * time + distance
 
 # function to solve for acceleration
 def acceleration(initialVelocity, finalVelocity, time, distance):
-    print("acceleration")
     if initialVelocity == "-":
         initialVelocity = 0
     if finalVelocity == "-":
@@ -88,7 +87,7 @@ def acceleration(initialVelocity, finalVelocity, time, distance):
         time = 0
     if distance == "-":
         distance = 0
-    return (finalVelocity - initialVelocity) / time - (distance / (time * time))
+    return (finalVelocity - initialVelocity - distance) / time
 
 # function to solve for time
 def time(initialVelocity, finalVelocity, acceleration, distance):
@@ -100,7 +99,7 @@ def time(initialVelocity, finalVelocity, acceleration, distance):
         acceleration = 0
     if distance == "-":
         distance = 0
-    return (finalVelocity - initialVelocity) / acceleration - (distance / (initialVelocity + finalVelocity))
+    return (finalVelocity - initialVelocity - distance) / acceleration
 
 # function to solve for distance
 def distance(initialVelocity, finalVelocity, acceleration, time):
@@ -112,7 +111,8 @@ def distance(initialVelocity, finalVelocity, acceleration, time):
         acceleration = 0
     if time == "-":
         time = 0
-    return (initialVelocity + finalVelocity) * time / 2 + (acceleration * time * time) / 2
+    return (finalVelocity - initialVelocity - acceleration * time) / 2
 
-# runs this to start the program
-givenVariables()
+# main function
+def main():
+    givenVariables()
