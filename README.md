@@ -1,13 +1,13 @@
 # PHY2048 - Physics Calculator
 ### Current Version: v1
 
-### Version Roadmap:
+**Version Roadmap:**
 
-_Version 1: Base functionality of all PHY2048 learning modules_
+_**Version 1:** Base functionality of all PHY2048 learning modules_
 
-_Version 2: Able to explain process of solving all learning modules_
+_**Version 2:** Able to explain process of solving all learning modules_
 
-_Version 3: Undetermined_
+_**Version 3:** Undetermined_
 
 ## Class Information
 **Instructor:** Zhongzhou Chen
