@@ -1,13 +1,12 @@
 # PHY2048 - Physics Calculator
-### Version Roadmap:
-
+## Version Roadmap:
 **(Current) Version 1:** _Base functionality of all PHY2048 learning modules_
 
 **Version 2:** _Able to explain process of solving all learning modules_
 
 **Version 3:** _Undetermined_
 
-## Class Information
+## Class Information:
 **Instructor:** Zhongzhou Chen
 
 **University:** University of Central Florida
