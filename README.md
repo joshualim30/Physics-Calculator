@@ -9,9 +9,9 @@
 **Semester Taken:** Fall 2022
  
 ## Calculator Initialization:
-To start up the calculator, use the following script to startup the program in the folder directory you assigned the repository:
+To start up the calculator, use the following command line prompt to startup the program in the folder directory you assigned the repository:
 
-_(Example: python3 initialPyton.py)_
+_($python3 initialPyton.py)_
 
 After startup, follow the prompts for the calculator to determine the best methods to solve for your problem.
 
