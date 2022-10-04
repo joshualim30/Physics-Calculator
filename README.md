@@ -2,12 +2,11 @@
 ### Current Version: v1
 
 **Version Roadmap:**
+**Version 1:** _Base functionality of all PHY2048 learning modules_
 
-_**Version 1:** Base functionality of all PHY2048 learning modules_
+**Version 2:** _Able to explain process of solving all learning modules_
 
-_**Version 2:** Able to explain process of solving all learning modules_
-
-_**Version 3:** Undetermined_
+**Version 3:** _Undetermined_
 
 ## Class Information
 **Instructor:** Zhongzhou Chen
