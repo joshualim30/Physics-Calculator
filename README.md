@@ -1,9 +1,7 @@
 # PHY2048 - Physics Calculator
-### Current Version: v1
+### Version Roadmap:
 
-**Version Roadmap:**
-
-**Version 1:** _Base functionality of all PHY2048 learning modules_
+**Version 1 (Current):** _Base functionality of all PHY2048 learning modules_
 
 **Version 2:** _Able to explain process of solving all learning modules_
 
