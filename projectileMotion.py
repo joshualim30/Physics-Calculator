@@ -114,5 +114,4 @@ def distance(initialVelocity, finalVelocity, acceleration, time):
     return (finalVelocity - initialVelocity - acceleration * time) / 2
 
 # main function
-def main():
-    givenVariables()
+givenVariables()

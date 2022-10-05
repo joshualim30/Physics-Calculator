@@ -114,5 +114,4 @@ def angle(radius, angularVelocity, angularAcceleration, time):
     return (radius * time) / angularVelocity
 
 # main function
-def main():
-    givenVariables()
+givenVariables()

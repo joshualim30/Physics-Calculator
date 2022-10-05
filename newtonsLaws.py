@@ -56,5 +56,4 @@ def force(mass, acceleration):
     return mass * acceleration
 
 # main function
-def main():
-    givenVariables()
+givenVariables()

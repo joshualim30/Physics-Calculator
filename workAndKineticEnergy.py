@@ -62,5 +62,4 @@ def kineticEnergy(force, distance, work):
     return work / distance
 
 # main function
-def main():
-    givenVariables()
+givenVariables()

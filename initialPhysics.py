@@ -2,6 +2,9 @@
 # By: Joshua Lim
 # Date: 10/04/2022
 
+# Importing Modules
+import subprocess
+
 # function to ask what section of physics to use
 def physicsSection():
     print("What section of physics would you like to use?")
@@ -23,14 +26,10 @@ def physicsSection():
     choice = input("Enter the number of the section you would like to use: ")
     if choice == "1":
         # python3 vectorAlgebra.py
-        with open("vectorAlgebra.py", "r") as vectorAlgebra:
-            code = vectorAlgebra.read()
-            exec(code)
+        subprocess.run(['python3', 'vectorAlgebra.py'])
     elif choice == "2":
         # python3 motion1D.py
-        with open("motion1D.py", "r") as motion1D:
-            code = motion1D.read()
-            exec(code)
+       subprocess.run(['python3', 'motion1D.py'])
     elif choice == "3":
         # python3 projectileMotion.py
         with open("projectileMotion.py", "r") as projectileMotion:
@@ -102,5 +101,4 @@ def physicsSection():
         
 
 # runs this to start the program
-def main():
-    physicsSection()
+physicsSection()
