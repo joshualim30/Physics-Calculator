@@ -1,6 +1,7 @@
 # vectorAlgebra.py - Vector Algebra Equations File
 # By: Joshua Lim
 # Date: 10/04/2022
+# Version 0 Optimized
 
 # imports
 import math

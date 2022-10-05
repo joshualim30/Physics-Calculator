@@ -1,6 +1,7 @@
 # initialPhysics.py - Initial Starter Physics File (For PHY2048 @ UCF)
 # By: Joshua Lim
 # Date: 10/04/2022
+# Version 0 Optimized
 
 # Importing Modules
 import subprocess

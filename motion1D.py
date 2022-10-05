@@ -1,6 +1,7 @@
 # motion1D.py - Motion in 1D Equations File
 # By: Joshua Lim
 # Date: 10/04/2022
+# Version 0 Optimized
 
 # imports
 # import math
