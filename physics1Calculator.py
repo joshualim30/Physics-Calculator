@@ -1,7 +1,9 @@
-# initialPhysics.py - Initial Starter Physics File (For PHY2048 @ UCF)
+# physics1Calculator.py - Initial Starter Physics File (For PHY2048 @ UCF)
 # By: Joshua Lim
 # Date: 10/04/2022
 # Version 0 Optimized
+
+# run '$python3 physics1Calculator.py' to start the program
 
 # Importing Modules
 import subprocess
@@ -50,28 +52,36 @@ def physicsSection():
         subprocess.run(['python3', 'workAndKineticEnergy.py'])
     elif choice == "8":
         # python3 conservationOfMechanicalEnergy.py
-        subprocess.run(['python3', 'conservationOfMechanicalEnergy.py'])
+        # subprocess.run(['python3', 'conservationOfMechanicalEnergy.py'])
+        print("Conservation of Mechanical Energy is not yet implemented.")
     elif choice == "9":
         # python3 linearMomentumAndConservationOfMomentum.py
-        subprocess.run(['python3', 'linearMomentumAndConservationOfMomentum.py'])
+        # subprocess.run(['python3', 'linearMomentumAndConservationOfMomentum.py'])
+        print("Linear Momentum and Conservation of Momentum is not yet implemented.")
     elif choice == "10":
         # python3 collisionsAndManyParticleSystems.py
-        subprocess.run(['python3', 'collisionsAndManyParticleSystems.py'])
+        # subprocess.run(['python3', 'collisionsAndManyParticleSystems.py'])
+        print("Collisions and Many Particle Systems is not yet implemented.")
     elif choice == "11":
         # python3 torquesAndStaticEquilibrium.py
-        subprocess.run(['python3', 'torquesAndStaticEquilibrium.py'])
+        # subprocess.run(['python3', 'torquesAndStaticEquilibrium.py'])
+        print("Torques and Static Equilibrium is not yet implemented.")
     elif choice == "12":
         # python3 rotationalMotion.py
-        subprocess.run(['python3', 'rotationalMotion.py'])
+        # subprocess.run(['python3', 'rotationalMotion.py'])
+        print("Rotational Motion is not yet available.")
     elif choice == "13":
         # python3 angularMomentum.py
-        subprocess.run(['python3', 'angularMomentum.py'])
+        # subprocess.run(['python3', 'angularMomentum.py'])
+        print("Angular Momentum is not yet implemented.")
     elif choice == "14":
         # python3 simpleHarmonicMotion.py
-        subprocess.run(['python3', 'simpleHarmonicMotion.py'])
+        # subprocess.run(['python3', 'simpleHarmonicMotion.py'])
+        print("Simple Harmonic Motion is not yet implemented.")
     elif choice == "15":
         # python3 wavesAndOscillation.py
-        subprocess.run(['python3', 'wavesAndOscillation.py'])
+        # subprocess.run(['python3', 'wavesAndOscillation.py'])
+        print("Waves and Oscillation is not yet implemented.")
     else:
         print("Please enter a valid number.")
         physicsSection()
@@ -82,5 +92,5 @@ def physicsSection():
         print("Thank you for using Physics Calculator!")
         print("----------------------------------------")
 
-# runs this to start the program
+# runs the code
 physicsSection()
