@@ -21,7 +21,7 @@ def physicsSection():
     print("5. Newton's Laws of Motion") # v0
     print("6. Circular Motion") # v0
     print("7. Work and Kinetic Energy") # v0
-    print("8. Conservation of Mechanical Energy")
+    print("8. Conservation of Mechanical Energy") # v0
     print("9. Linear Momentum and Conservation of Momentum")
     print("10. Collisions and Many Particle Systems")
     print("11. Torques and Static Equilibrium")
@@ -53,8 +53,7 @@ def physicsSection():
         subprocess.run(['python3', 'workAndKineticEnergy.py'])
     elif choice == "8":
         # python3 conservationOfMechanicalEnergy.py
-        # subprocess.run(['python3', 'conservationOfMechanicalEnergy.py'])
-        print("Conservation of Mechanical Energy is not yet implemented.")
+        subprocess.run(['python3', 'conservationOfMechanicalEnergy.py'])
     elif choice == "9":
         # python3 linearMomentumAndConservationOfMomentum.py
         # subprocess.run(['python3', 'linearMomentumAndConservationOfMomentum.py'])
@@ -97,7 +96,6 @@ def physicsSection():
         print("Invalid input, terminating program.")
         print("----------------------------------------")
         sys.exit()
-
 
 # runs the code
 physicsSection()
