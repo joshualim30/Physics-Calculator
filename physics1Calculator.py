@@ -7,6 +7,7 @@
 
 # Importing Modules
 import subprocess
+import sys
 
 # function to ask what section of physics to use
 def physicsSection():
@@ -91,6 +92,12 @@ def physicsSection():
     elif again == "n":
         print("Thank you for using Physics Calculator!")
         print("----------------------------------------")
+        sys.exit()
+    else:
+        print("Invalid input, terminating program.")
+        print("----------------------------------------")
+        sys.exit()
+
 
 # runs the code
 physicsSection()
