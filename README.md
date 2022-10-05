@@ -1,6 +1,6 @@
 # PHY2048 - Physics Calculator
-## Version Roadmap:
-**(Current) Version 0:** _Base functionality of all PHY2048 learning modules to solve for 1 variable_
+## Version Roadmap: ('-' indicates current version)
+**- Version 0:** _Base functionality of all PHY2048 learning modules to solve for 1 variable_
 
 **Version 1:** _Base functionality of all PHY2048 learning modules to solve for multiple variables to find 1 variable_
 
