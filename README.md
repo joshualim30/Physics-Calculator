@@ -18,7 +18,7 @@
 ## Calculator Initialization:
 To start up the calculator, use the following command line prompt to initialize the program in the directory you assigned the repository upon cloning:
 
-_($python3 initialPyton.py)_
+_($python3 physics1Calculator.py)_
 
 After startup, follow the prompts for the calculator to determine the best methods to solve for your problem. If your problem isn't listed or isn't solveable, please see the ["Questions or Suggestions"](##-Questions-or-Suggestions) section of this README.md file.
 
