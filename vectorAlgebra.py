@@ -8,6 +8,7 @@ import math
 
 # function to ask what the user is trying to find
 def findWhat():
+    print("----------------------------------------")
     print("What are you trying to find?")
     print("1. x1")
     print("2. y1")
@@ -34,6 +35,7 @@ def findWhat():
 
 # function to ask what variables are given
 def givenVariables(finding):
+    print("----------------------------------------")
     print("What variables are given? (enter '-' if it is not given)")
     if finding != "x1":
         x1 = int(input("Enter the x1 value: "))
@@ -91,6 +93,7 @@ def angle(x1, y1, x2, y2):
 #                         0   1   2   3      4        5
 solvingFor = findWhat()
 given = givenVariables(solvingFor)
+print("----------------------------------------")
 if solvingFor == "x1": # needs x2, magnitude, angle to solve (2, 4, 5)
     if given[2] == "-":
         print("Sorry, Python Calculator cannot solve for x1 without x2. Please try again.")
@@ -157,4 +160,5 @@ elif solvingFor == "angle": # needs x1, y1, x2 & y2 to solve (0, 1, 2, 3)
         print("The angle value is " + str(solution) + " by using the equation angle = degrees(atan((y2 - y1) / (x2 - x1))).")
 else:
     print("Sorry, Python Calculator cannot solve for " + solvingFor + ". Please try again.") # if solvingFor is not a valid option
+print("----------------------------------------")
 # end of code

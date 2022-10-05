@@ -8,6 +8,7 @@
 
 # function to ask what the user is trying to find
 def findWhat():
+    print("----------------------------------------")
     print("What are you trying to find?")
     print("1. Initial Velocity")
     print("2. Final Velocity")
@@ -31,6 +32,7 @@ def findWhat():
 
 # function to ask what variables are given
 def givenVariables(finding):
+    print("----------------------------------------")
     print("What variables are given? (enter '-' if it is not given)")
     if finding != "initial velocity":
         initialVelocity = int(input("Enter the initial velocity: "))
@@ -79,6 +81,7 @@ def distance(initialVelocity, finalVelocity, acceleration, time):
 #                               0               1               2          3       4
 solvingFor = findWhat()
 given = givenVariables(solvingFor)
+print("----------------------------------------")
 if solvingFor == "initial velocity": # needs final velocity, acceleration, time, distance
     if given[1] == "-":
         print("Sorry, Python Calculator cannot solve for initial velocity without final velocity. Please try again.")
@@ -139,4 +142,5 @@ elif solvingFor == "distance": # needs initial velocity, final velocity, acceler
     else:
         solution = distance(given[0], given[1], given[2], given[3])
         print("The distance is " + str(solution) + " by using the formula d = (v - v0 - a*t) * t.")
+print("----------------------------------------")
 # end of code
