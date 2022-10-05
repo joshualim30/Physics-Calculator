@@ -8,6 +8,8 @@ import subprocess
 
 # function to ask what section of physics to use
 def physicsSection():
+    print("----------------------------------------")
+    print("----------------------------------------")
     print("What section of physics would you like to use?")
     print("1. Vector Algebra") # v0
     print("2. Motion in 1D") # v0
@@ -73,7 +75,12 @@ def physicsSection():
     else:
         print("Please enter a valid number.")
         physicsSection()
-        
+    again = input("Would you like to use another section of physics? (y/n): ")
+    if again == "y":
+        physicsSection()
+    elif again == "n":
+        print("Thank you for using Physics Calculator!")
+        print("----------------------------------------")
 
 # runs this to start the program
 physicsSection()
