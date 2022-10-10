@@ -11,7 +11,7 @@
 ## Class Information:
 **Instructor:** Zhongzhou Chen
 
-**University:** University of Central Florida
+**University:** [University of Central Florida](https://www.ucf.edu)
 
 **Semester Taken:** Fall 2022
  
