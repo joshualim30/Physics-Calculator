@@ -1,4 +1,4 @@
-# physics1Calculator.py - Initial Starter Physics File (For PHY2048 @ UCF)
+# physics1Calculator.py - Initial Starter Physics File (For PHY2048 @ UCF) https://www.github.com/joshualim30/physics-calculator
 # By: Joshua Lim
 # Date: 10/04/2022
 # Version 0 Optimized

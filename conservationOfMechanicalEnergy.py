@@ -5,60 +5,58 @@
 
 # imports
 import math
+import sys
+import decimal
+
+# EQUATIONS
+# work
+# - work = force * distance
+# force
+# - force = work / distance
+# distance
+# - distance = work / force
+# kinetic energy
+# - kinetic energy = 0.5 * mass * (velocity ** 2)
+# mass
+# - mass = kinetic energy / (0.5 * (velocity ** 2))
+# velocity
+# - velocity = math.sqrt(2 * kinetic energy / mass)
 
 # function to ask what the user is trying to find
 def findWhat():
     print("----------------------------------------")
     print("What are you trying to find?")
-    print("1. Work")
-    print("2. Force")
-    print("3. Distance")
-    print("4. Kinetic Energy")
-    print("5. Mass")
-    print("6. Velocity")
-    choice = int(input("Enter the number of the variable you are trying to find: "))
-    if choice == 1:
-        return "work"
-    elif choice == 2:
-        return "force"
-    elif choice == 3:
-        return "distance"
-    elif choice == 4:
-        return "kinetic energy"
-    elif choice == 5:
-        return "mass"
-    elif choice == 6:
-        return "velocity"
-    else:
-        print("Please enter a valid number.")
-        findWhat()
+    print("1) Velocity")
+    print("2) Distance")
+    print("3) Height")
+    print("4) Time")
 
 # function to ask what variables are given
 def givenVariables(finding):
     print("----------------------------------------")
     print("What variables are given? (enter '-' if it is not given)")
     if finding != "work":
-        work = int(input("Enter the work: "))
+        work = float(input("Enter the work: "))
     else:
         work = "-"
     if finding != "force":
-        force = int(input("Enter the force: "))
+        force = float(input("Enter the force: "))
     else:
         force = "-"
     if finding != "distance":
-        distance = int(input("Enter the distance: "))
+        distance = float(input("Enter the distance: "))
     else:
         distance = "-"
     if finding != "kinetic energy":
-        kineticEnergy = int(input("Enter the kinetic energy: "))
+        kineticEnergy = float(input("Enter the kinetic energy: "))
     else:
         kineticEnergy = "-"
     if finding != "mass":
-        mass = int(input("Enter the mass: "))
+        mass = float(input("Enter the mass: "))
     else:
         mass = "-"
     if finding != "velocity":
-        velocity = int(input("Enter the velocity: "))
+        velocity = float(input("Enter the velocity: "))
     else:
         velocity = "-"
     return [work, force, distance, kineticEnergy, mass, velocity]

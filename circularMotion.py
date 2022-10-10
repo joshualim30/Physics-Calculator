@@ -5,107 +5,73 @@
 
 # imports
 import math
+import sys
+import decimal
+
+# CIRCULAR MOTION EQUATIONS
+# initial velocity
 
 # function to ask what the user is trying to find for circular motion
 def findWhat():
     print("----------------------------------------")
     print("What are you trying to find?")
-    print("1. Initial Velocity")
-    print("2. Final Velocity")
-    print("3. Acceleration")
-    print("4. Time")
-    print("5. Distance")
-    print("6. Centripetal Force")
-    print("7. Centripetal Acceleration")
-    print("8. Angular Velocity")
-    print("9. Angular Acceleration")
-    print("10. Tangential Velocity")
-    print("11. Tangential Acceleration")
-    choice = int(input("Enter the number of the variable you are trying to find: "))
-    if choice == 1:
-        return "initial velocity"
-    elif choice == 2:
-        return "final velocity"
-    elif choice == 3:
-        return "acceleration"
-    elif choice == 4:
-        return "time"
-    elif choice == 5:
-        return "distance"
-    elif choice == 6:
-        return "centripetal force"
-    elif choice == 7:
-        return "centripetal acceleration"
-    elif choice == 8:
-        return "angular velocity"
-    elif choice == 9:
-        return "angular acceleration"
-    elif choice == 10:
-        return "tangential velocity"
-    elif choice == 11:
-        return "tangential acceleration"
-    elif choice == 12:
-        return "radius"
-    elif choice == 13:
-        return "centripetal velocity"
-    else:
-        print("Please enter a valid number.")
-        findWhat()
+    print("1) Centripetal Force")
+
 
 # function to ask what variables are given for circular motion
 def givenVariables(finding):
     print("----------------------------------------")
     print("What variables are given? (enter '-' if it is not given)")
     if finding != "initial velocity":
-        initialVelocity = int(input("Enter the initial velocity: "))
+        initialVelocity = float(input("Enter the initial velocity: "))
     else:
         initialVelocity = "-"
     if finding != "final velocity":
-        finalVelocity = int(input("Enter the final velocity: "))
+        finalVelocity = float(input("Enter the final velocity: "))
     else:
         finalVelocity = "-"
     if finding != "acceleration":
-        acceleration = int(input("Enter the acceleration: "))
+        acceleration = float(input("Enter the acceleration: "))
     else:
         acceleration = "-"
     if finding != "time":
-        time = int(input("Enter the time: "))
+        time = float(input("Enter the time: "))
     else:
         time = "-"
     if finding != "distance":
-        distance = int(input("Enter the distance: "))
+        distance = float(input("Enter the distance: "))
     else:
         distance = "-"
     if finding != "centripetal force":
-        centripetalForce = int(input("Enter the centripetal force: "))
+        centripetalForce = float(input("Enter the centripetal force: "))
     else:
         centripetalForce = "-"
     if finding != "centripetal acceleration":
-        centripetalAcceleration = int(input("Enter the centripetal acceleration: "))
+        centripetalAcceleration = float(input("Enter the centripetal acceleration: "))
     else:
         centripetalAcceleration = "-"
     if finding != "angular velocity":
-        angularVelocity = int(input("Enter the angular velocity: "))
+        angularVelocity = float(input("Enter the angular velocity: "))
     else:
         angularVelocity = "-"
     if finding != "angular acceleration":
-        angularAcceleration = int(input("Enter the angular acceleration: "))
+        angularAcceleration = float(input("Enter the angular acceleration: "))
     else:
         angularAcceleration = "-"
     if finding != "tangential velocity":
-        tangentialVelocity = int(input("Enter the tangential velocity: "))
+        tangentialVelocity = float(input("Enter the tangential velocity: "))
     else:
         tangentialVelocity = "-"
     if finding != "tangential acceleration":
-        tangentialAcceleration = int(input("Enter the tangential acceleration: "))
+        tangentialAcceleration = float(input("Enter the tangential acceleration: "))
     else:
         tangentialAcceleration = "-"
     if finding != "radius":
-        radius = int(input("Enter the radius: "))
+        radius = float(input("Enter the radius: "))
     else:
         radius = "-"
     if finding != "centripetal velocity":
-        centripetalVelocity = int(input("Enter the centripetal velocity: "))
+        centripetalVelocity = float(input("Enter the centripetal velocity: "))
     else:
         centripetalVelocity = "-"
     return [initialVelocity, finalVelocity, acceleration, time, distance, centripetalForce, centripetalAcceleration, angularVelocity, angularAcceleration, tangentialVelocity, tangentialAcceleration, radius, centripetalVelocity]

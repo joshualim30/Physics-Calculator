@@ -16,7 +16,7 @@ def findWhat():
     print("4. y2")
     print("5. Magnitude")
     print("6. Angle")
-    choice = int(input("Enter the number of the variable you are trying to find: "))
+    choice = float(input("Enter the number of the variable you are trying to find: "))
     if choice == 1:
         return "x1"
     elif choice == 2:
@@ -38,27 +38,27 @@ def givenVariables(finding):
     print("----------------------------------------")
     print("What variables are given? (enter '-' if it is not given)")
     if finding != "x1":
-        x1 = int(input("Enter the x1 value: "))
+        x1 = float(input("Enter the x1 value: "))
     else:
         x1 = "-"
     if finding != "y1":
-        y1 = int(input("Enter the y1 value: "))
+        y1 = float(input("Enter the y1 value: "))
     else:
         y1 = "-"
     if finding != "x2":
-        x2 = int(input("Enter the x2 value: "))
+        x2 = float(input("Enter the x2 value: "))
     else:
         x2 = "-"
     if finding != "y2":
-        y2 = int(input("Enter the y2 value: "))
+        y2 = float(input("Enter the y2 value: "))
     else:
         y2 = "-"
     if finding != "magnitude":
-        magnitude = int(input("Enter the magnitude: "))
+        magnitude = float(input("Enter the magnitude: "))
     else:
         magnitude = "-"
     if finding != "angle":
-        angle = int(input("Enter the angle: "))
+        angle = float(input("Enter the angle: "))
     else:
         angle = "-"
     return [x1, y1, x2, y2, magnitude, angle]

@@ -15,7 +15,7 @@ def findWhat():
     print("3. Acceleration")
     print("4. Time")
     print("5. Distance")
-    choice = int(input("Enter the number of the variable you are trying to find: "))
+    choice = float(input("Enter the number of the variable you are trying to find: "))
     if choice == 1:
         return "initial velocity"
     elif choice == 2:
@@ -35,23 +35,23 @@ def givenVariables(finding):
     print("----------------------------------------")
     print("What variables are given? (enter '-' if it is not given)")
     if finding != "initial velocity":
-        initialVelocity = int(input("Enter the initial velocity: "))
+        initialVelocity = float(input("Enter the initial velocity: "))
     else:
         initialVelocity = "-"
     if finding != "final velocity":
-        finalVelocity = int(input("Enter the final velocity: "))
+        finalVelocity = float(input("Enter the final velocity: "))
     else:
         finalVelocity = "-"
     if finding != "acceleration":
-        acceleration = int(input("Enter the acceleration: "))
+        acceleration = float(input("Enter the acceleration: "))
     else:
         acceleration = "-"
     if finding != "time":
-        time = int(input("Enter the time: "))
+        time = float(input("Enter the time: "))
     else:
         time = "-"
     if finding != "distance":
-        distance = int(input("Enter the distance: "))
+        distance = float(input("Enter the distance: "))
     else:
         distance = "-"
     return [initialVelocity, finalVelocity, acceleration, time, distance]

@@ -6,31 +6,61 @@
 # Newton's Laws of Motion
 # 1. An object at rest will stay at rest unless acted upon by an unbalanced force.
 # 2. An object in motion will stay in motion unless acted upon by an unbalanced force.
+# -  a = F / m
+# -  a = Vf - Vi / t
+# -  a = (Vf^2 - Vi^2) / 2d
 # 3. For every action there is an equal and opposite reaction.
 
 # imports
-# import math
+import math
+import sys
+import decimal
+
+# global variables
+gravity = 9.81
 
 # function to ask what the user is trying to find
 def findWhat():
     print("----------------------------------------")
     print("What are you trying to find?")
-    print("1. Force")
-    print("2. Mass")
-    print("3. Acceleration")
-    print("4. Net Force")
-    print("5. Weight")
-    choice = int(input("Enter the number of the variable you are trying to find: "))
-    if choice == 1:
-        return "force"
-    elif choice == 2:
-        return "mass"
-    elif choice == 3:
-        return "acceleration"
-    elif choice == 4:
-        return "net force"
-    elif choice == 5:
-        return "weight"
+    print("0.1) Choose a different section (back)")
+    print("0.2) List of all equations")
+    print("0.3) What are Newton's Laws of Motion?")
+    print("---")
+    print("1) Magnitude of Acceleration Equilibrium")
+    print("2) Magnitude of Acceleration on an Incline Plane")
+    print("3) Magnitude of Exerted Force")
+    print("4) How Long it Takes for an Object to Stop")
+    print("5) How Far an Object Will Travel When You Stopped Pushing It")
+    print("6) Speed of Object after Time")
+    print("7) Speed of Object after Experiencing an External Force")
+    print("8) Velocity of Object after Experiencing an External Force")
+    print("9) Velocity of Object after Exerting an External Force")
+    print("10) Magnitude of Force Given Mass and Acceleration")
+    print("11) Force of Friction Between Two Objects Given Mass, Acceleration and Static Friction")
+    print("12) Spring Constant")
+    print("13) Tension Compared to Weight")
+    print("14) Magnitude of Tension when You Let Go of an Object")
+    print("14) Magnitude of Acceleration both Objects Experience")
+    print("15) Magnitude of Force Exerted from Object1 on Object2")
+    print("16) How Much Force is Required to Separate Two Objects Given Tenstion, Force and Mass")
+    choice = float(input("Enter the number of the variable you are trying to find: "))
+    if choice == 0.1:
+        sys.exit()
+    elif choice == 0.2:
+        print("List of all equations")
+        print("1) Magnitude of Acceleration Equilibrium: ")
+
+    elif choice == 0.3:
+        print("Newton's Laws of Motion are:")
+        print("1. An object at rest will stay at rest unless acted upon by an unbalanced force.")
+        print("2. An object in motion will stay in motion unless acted upon by an unbalanced force.")
+        print("3. For every action there is an equal and opposite reaction.")
+        print("Press enter to continue")
+        input()
+        findWhat()
+    elif choice >= 1 and choice <= 16:
+        return choice
     else:
         print("Please enter a valid number.")
         findWhat()
@@ -40,23 +70,23 @@ def givenVariables(finding):
     print("----------------------------------------")
     print("What variables are given? (enter '-' if it is not given)")
     if finding != "force":
-        force = int(input("Enter the force: "))
+        force = float(input("Enter the force: "))
     else:
         force = "-"
     if finding != "mass":
-        mass = int(input("Enter the mass: "))
+        mass = float(input("Enter the mass: "))
     else:
         mass = "-"
     if finding != "acceleration":
-        acceleration = int(input("Enter the acceleration: "))
+        acceleration = float(input("Enter the acceleration: "))
     else:
         acceleration = "-"
     if finding != "net force":
-        netForce = int(input("Enter the net force: "))
+        netForce = float(input("Enter the net force: "))
     else:
         netForce = "-"
     if finding != "weight":
-        weight = int(input("Enter the weight: "))
+        weight = float(input("Enter the weight: "))
     else:
         weight = "-"
     return [force, mass, acceleration, netForce, weight]

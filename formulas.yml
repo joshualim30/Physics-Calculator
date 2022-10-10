@@ -1,0 +1,16 @@
+List of all equations:
+1) Net Force: Fn = i sum, j sum
+2) Net Force with Theta: Fn = i cos theta sum, j sin theta sum
+3) Normal Force: fn = mg
+4) Normal Force Components: Fn = mg (cos or sin) theta
+5) Magnitude of Force: F = ma
+6) Magnitude of Tension: T = mg sin theta
+7) Static Friction (to keep object at equilibrium): Fs = mu s N
+8) Kinetic Friction (to keep object moving): Fk = mu k N
+9) Minimum Force to Start Moving Object: F = mu s N
+10) Spring Constant (at rest): k = F / x
+11) Spring Extension/Extended Length: x = F / k
+12) Angle that Object Will Slide Down Incline Plane: theta = tan inverse (h / l)
+13) Pulley Spring Constant: k = F / x
+14) Pulley Spring Extension: x = F / k
+15) Pulley Rope Tension: T = F / x
