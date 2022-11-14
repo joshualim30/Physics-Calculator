@@ -139,6 +139,7 @@ W = (total change in KE) = 1/2 * m * vf^2 - 1/2 * m * v0^2
 
 8) Conservation of Mechanical Energy Formulas:
 PE = mgh 
+PE = 1/2 * m * v^2
 KE = 1/2 * m * v^2
 KEspring = 1/2 * k * s^2
 PE0 + KE0 = PEf + KEf
